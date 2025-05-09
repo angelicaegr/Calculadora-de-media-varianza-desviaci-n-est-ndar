@@ -6,23 +6,23 @@ def calculate(input_list):
     reshaped=np.reshape(input_list,(3,3))
     result={
         'mean': [
-            np.mean(reshaped,axis=0).to_list(),
-            np.mean(reshaped,axis=1).to_list(),
+            np.mean(reshaped,axis=0).tolist(),
+            np.mean(reshaped,axis=1).tolist(),
             np.mean(reshaped).item()
         ],
         'variance': [
-            np.var(reshaped,axis=0).to_list(),
-            np.var(reshaped,axis=1).to_list(),
+            np.var(reshaped,axis=0).tolist(),
+            np.var(reshaped,axis=1).tolist(),
             np.var(reshaped).item()
         ],
     'standard deviation': [
-            np.std(reshaped,axis=0).to_list(),
-            np.std(reshaped,axis=1).to_list(),
+            np.std(reshaped,axis=0).tolist(),
+            np.std(reshaped,axis=1).tolist(),
             np.std(reshaped).item()
         ],
     'max': [
-            np.max(reshaped,axis=0).to_list(),
-            np.max(reshaped,axis=1).to_list(),
+            np.max(reshaped,axis=0).tolist(),
+            np.max(reshaped,axis=1).tolist(),
             np.max(reshaped).item()
         ],
     'min': [
@@ -33,7 +33,7 @@ def calculate(input_list):
         'sum': [
             np.sum(reshaped, axis=0).tolist(),
             np.sum(reshaped, axis=1).tolist(),
-            np.sumreshaped).item()
+            np.sum(reshaped).item()
         ]
     }
 
