@@ -16,5 +16,4 @@ def calculate(input_list):
         'min': [list(np.min(a, axis=0)), list(np.min(a, axis=1)), np.min(a)],
         'sum': [list(np.sum(a, axis=0)), list(np.sum(a, axis=1)), np.sum(a)]
     }
-
     return calculations
