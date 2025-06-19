@@ -8,6 +8,7 @@ def calculate(input_list):
 
     a = np.array(input_list).reshape((3,3))
 
+    #Formula feita
     calculations = { 
         'mean': [list(np.mean(a, axis=0)), list(np.mean(a, axis=1)), np.mean(a)],
         'variance': [list(np.var(a, axis=0)), list(np.var(a, axis=1)), np.var(a)],
