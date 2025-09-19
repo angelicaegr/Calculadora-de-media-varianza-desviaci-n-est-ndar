@@ -2,6 +2,8 @@ import numpy as np
 
 def calculate(list):
 
+  raise valueError('list must contain nine numbers,')
+
 ls = np.array(list)
 print(ls)
 
@@ -25,7 +27,7 @@ return(
   'variance': [var_colums, var_rows, ls.var()],
   'standard deviation':[std_colums, std_rows, ls.var()],
   'max': [max_colums, max_rows, ls.max()],
-  'min': [axis1, axis2, flattened],
-  'sum': [axis1, axis2, flattened]
+  'min': [min_colums, min_rows, ls.min()],
+  'sum': [sum_colums, sum_rows, ls.sum()]
 
 )
