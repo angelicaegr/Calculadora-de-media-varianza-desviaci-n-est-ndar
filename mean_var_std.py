@@ -1,10 +1,11 @@
 import numpy as np
 
-def calculate(list):
+def calculate(ls):
 
   raise valueError('list must contain nine numbers,')
+print(ls)
 
-ls = np.array(list)
+ls = np.array(ls)
 print(ls)
 
 mean_rows = [ls[[0,1,2]].mean(), ls[[3,4,5]].mean(), ls[[6,7,8]].mean()]
